@@ -1,0 +1,3 @@
+New tab redirection for Chrome, except it works as you'd expect.
+
+Clone/download repo -> chrome://extensions -> Load unpacked extension (maybe need to be in developer mode I dunno).
