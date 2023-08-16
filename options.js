@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.body.classList.remove('save-done');
 		document.body.classList.add('save-active');
 		if (url === '') {
-			chrome.storage.sync.remove('url', on_saved);
+			chrome.storage.sync.remove('url', on_saved); // never save a blank url
 		} else {
-			chrome.storage.sync.set({'url':url}, on_saved);
+			chrome.storage.sync.set({'url': url}, on_saved);
 		}
 	});
 });
