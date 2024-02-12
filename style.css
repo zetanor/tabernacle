@@ -1,0 +1,36 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fafafa;
+	color: #444444;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #444444;
+		color: #fafafa;
+	}
+}
+#configure {
+	font-size: 8rem;
+}
+@keyframes shape-rotator {
+	to { transform: rotate(360deg); }
+}
+#shape-rotator {
+	vertical-align: middle;
+	animation: 1s linear shape-rotator infinite;
+	opacity: 0.175;
+	font-size: 5rem;
+}
+html:not(.awaiting-ready) #shape-rotator {
+	display: none;
+}

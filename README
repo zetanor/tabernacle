@@ -1,3 +1,5 @@
-New tab redirection for Chrome, except it works as you'd expect.
+New tab redirection for Chrome, except it works as you'd expect even for file:// URI.
 
 Clone/download repo -> chrome://extensions -> Load unpacked extension (maybe need to be in developer mode I dunno).
+
+Enable local file access in the extension's options if file:// redirection is required. It's a checkbox called "Autoriser l'accès aux URL de fichier" or something like that. Figure it out.

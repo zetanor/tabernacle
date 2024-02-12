@@ -1,8 +1,9 @@
 {
 	"name": "Tabernacle",
 	"version": "0.4.20",
-	"chrome_url_overrides": {"newtab": "main.html"},
-	"permissions": ["storage"],
+	"chrome_url_overrides": {"newtab": "newtab.html"},
+	"background": {"service_worker": "service_worker.js"},
+	"permissions": ["storage", "tabs"],
 	"options_ui": {"page": "options.html", "open_in_tab": false},
 	"manifest_version": 3
 }
